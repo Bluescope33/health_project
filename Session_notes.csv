@@ -1,0 +1,9 @@
+Date,Phase,Tech Stack,Concept,Command/Code,Status,Logic (The Why)
+2026-01-13,Warehouse,PostgreSQL,DB Initialization,psql -d postgres,Complete,Data must persist beyond session end.
+2026-01-14,Warehouse,SQL DDL,Schema Design,CREATE TABLE health_logs...,Complete,Standardized telemetry allows fleet-wide queries.
+2026-01-15,Bridge,Python,DB Connection,import psycopg2,Complete,The bridge between hardware stats and storage.
+2026-01-16,Bridge,Linux,Virtual Env,source venv/bin/activate,Complete,Prevents system-wide dependency corruption.
+2026-01-20,Automation,Cron,Scheduling,* * * * * [path],Complete,If a human has to run it the system is broken.
+2026-01-20,Automation,Linux,Absolute Paths,/home/lclark/...,Complete,Cron has no context; it needs exact coordinates.
+2026-01-20,Maintenance,SQL/Cron,Retention Policy,DELETE ... INTERVAL '7 days',Active,Prevents Disk Full (DF) critical outages.
+2026-01-21,Alerting,Python,Thresholds,if cpu > 80:,Pending,Moving from reactive monitoring to proactive alerting.
