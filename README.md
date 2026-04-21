@@ -1,3 +1,8 @@
+A Python-based system health monitoring tool that collects real-time CPU and RAM metrics 
+and logs them to a PostgreSQL database on a 60-second automated schedule. 
+Built in a Linux environment using VirtualBox.
+
+
 # Autonomous System Health Monitor
 
 ## Project Evolution Timeline
